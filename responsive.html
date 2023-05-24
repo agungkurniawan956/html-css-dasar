@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- responsive  html use meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive HTML</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .left1 {
+        background-color: aqua;
+        padding: 20px;
+        width: 20%;
+        float: left;
+      }
+      .main1 {
+        background-color: antiquewhite;
+        padding: 20px;
+        width: 60%;
+        float: left;
+      }
+      .right1 {
+        background-color: black;
+        padding: 20px;
+        color: white;
+        width: 20%;
+        float: left;
+      }
+
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      .menu a {
+        background-color: #e5e5e5;
+        padding: 15px;
+        width: 100%;
+        color: black;
+        margin-top: 5px;
+        display: block;
+      }
+
+      .main {
+        padding: 15px;
+        width: 60%;
+        float: left;
+      }
+
+      .right {
+        width: 20%;
+        float: left;
+        padding: 15px;
+        background-color: #e5e5e5;
+        text-align: center;
+        margin-top: 5px;
+      }
+
+      footer {
+        margin-top: 5px;
+        text-align: center;
+        padding: 15px;
+        background-color: black;
+        color: cadetblue;
+      }
+
+      /* gunakan media kueri untuk pembatas pada ukuran yg di inginkan */
+      @media screen and (max-width: 620px) {
+        .left1,
+        .main1,
+        .right1 {
+          width: 100%; /* lebarnya akan menjadi 100% pada layar 800px */
+        }
+
+        /* responsive web full */
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      }
+
+      /* @media only screen and(max-width: 620px) {
+        .menu,
+        .main,
+        .right {
+          width: 100%;
+        }
+      } */
+    </style>
+  </head>
+  <body>
+    <h3>Atur viewport pada head</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nemo neque
+      molestiae facere quisquam. Enim fugiat velit laboriosam, amet nostrum
+      commodi alias nemo nisi laudantium quos? loe
+    </p>
+
+    <hr />
+
+    <!-- responsive pada image -->
+    <h3>Responsive pada image</h3>
+    <p>
+      Ketika memberikan CSS property width dengan presentasi maka gambar akan
+      mengikuti ukuran layar
+    </p>
+    <img src="img/Cartoon-wallpaper-9739638.jpg" style="width: 100%" alt="" />
+
+    <hr />
+
+    <!-- atur max width -->
+    <h3>Mengatur Max width</h3>
+    <p>
+      "max-width:100%" prevents the image from getting bigger than its original
+      size. However, if you make the browser window smaller, the image will
+      still scale down.
+    </p>
+    <p>Resize the browser window to see the effect.</p>
+    <img
+      src="img/Danger_Close-wallpaper-7006969.jpg"
+      style="max-width: 100%; height: auto"
+      alt=""
+    />
+
+    <hr />
+
+    <!-- menampilkan gambar yang berbeda pada setiap ukuran browser yg berbeda -->
+
+    <h3>
+      Menampilkan Gambar yang berbeda pada setipa ukuran browser yang berbeda
+    </h3>
+    <p>
+      Jika anda membuka dilayar 600px gambar di bawah ini adalah quby jika layar
+      lebih besar akan menampilkan logo instagram
+    </p>
+    <picture>
+      <source srcset="quby.gif" media="(max-width: 600px)" />
+      <source srcset="Instagram.png" media="(max-width: 1500px)" />
+      <source srcset="Instagram.png" />
+      <img src="Instagram.png" alt="instagram" style="width: 500px" />
+    </picture>
+
+    <hr />
+
+    <!-- responsive text size -->
+    <h3>Responsive text</h3>
+    <h4 style="font-size: 5vw">This text is responsive text</h4>
+
+    <hr />
+
+    <!-- Media queries -->
+
+    <h3>Media Queries</h3>
+    <p>
+      Selain mengubah ukuran teks dan gambar, kueri media juga umum digunakan di
+      halaman web yang responsif. Dengan kueri media, Anda dapat menentukan gaya
+      yang sama sekali berbeda untuk ukuran browser yang berbeda. Contoh: ubah
+      ukuran jendela browser untuk melihat bahwa tiga elemen div di bawah ini
+      akan ditampilkan secara horizontal di layar besar dan ditumpuk secara
+      vertikal di layar kecil:
+    </p>
+
+    <div class="left1">
+      <p>LEFT</p>
+    </div>
+    <div class="main1">
+      <p>Main Content</p>
+    </div>
+    <div class="right1">
+      <p>Right</p>
+    </div>
+
+    <br />
+    <hr />
+    <h3>Responsive web page - full example</h3>
+
+    <div
+      style="
+        background-color: rgb(248, 234, 208);
+        padding: 15px;
+        text-align: center;
+        color: rgb(179, 179, 179);
+      "
+    >
+      <h1>Responsive WEB Page</h1>
+    </div>
+
+    <div style="overflow: auto">
+      <div class="menu">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+      </div>
+
+      <div class="main">
+        <h3>Lorem Ipsum</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
+          voluptate, quisquam quos est harum amet corporis quaerat assumenda ut
+          soluta, voluptates sequi odit tempora consequatur.
+        </p>
+      </div>
+
+      <div class="right">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+          repellat nulla esse, tenetur facilis ea?
+        </p>
+      </div>
+    </div>
+
+    <footer>© copyright agung.com</footer>
+  </body>
+</html>

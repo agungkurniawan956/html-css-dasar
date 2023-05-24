@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="intuisi 2.jpg" type="image/x-icon" />
+    <style>
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+        border: 1px solid black;
+        text-align: left;
+        padding: 9px;
+      }
+    </style>
+    <title>HTML Entitis</title>
+  </head>
+  <body>
+    <h1>HTML Form</h1>
+    <form action="">
+      <fieldset>
+        <legend>Data Diri</legend>
+        <label for="firstName">First Name</label><br />
+        <input type="text" name="firstName" id="firstName" /> <br />
+        <label for="lastName">Last Name</label><br />
+        <input type="text" name="lastName" id="lastName" /> <br />
+        <label for="username">Username</label><br />
+        <input type="text" name="username" id="username" /><br />
+        <label for="password">Password</label><br />
+        <input type="password" name="password" id="password" /><br />
+
+        <p>Jenis Kelamin :</p>
+        <input type="radio" name="jeniskelamin" id="male" value="male" />
+        <label for="male">Male</label><br />
+        <input type="radio" name="jeniskelamin" id="female" value="female" />
+        <label for="female">Female</label>
+
+        <p>Hobby</p>
+        <p>
+          <input type="checkbox" name="bola" id="bola" />
+          <label for="bola">Bola</label>
+        </p>
+        <p>
+          <input type="checkbox" name="voly" id="voly" />
+          <label for="voly">Voly</label>
+        </p>
+        <p>
+          <label for="gelar">Lulusan:</label>
+          <select name="gelar" id="gelar">
+            <option value="disabled" selected disabled>-pilih-</option>
+            <option value="sma">SMA</option>
+            <option value="d1">D1</option>
+            <option value="d2">D2</option>
+            <option value="d3">D3</option>
+            <option value="s1">S1</option>
+          </select>
+        </p>
+
+        <label for="pesan">Pesan:</label><br />
+        <textarea name="pesan" id="pesan" cols="35" rows="10"></textarea><br />
+
+        <datalist> </datalist>
+        <br /><br />
+        <input type="submit" value="submit" />
+      </fieldset>
+    </form>
+    <hr />
+    <a href="index.html">Back To</a>
+  </body>
+</html>

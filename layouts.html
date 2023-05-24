@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layouts HTML</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Style the header */
+      .float-header {
+        background-color: #000028;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+
+      /* Create two columns/boxes that floats next to each other */
+      .float-nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+      }
+
+      /* Style the list inside the menu */
+      .float-ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .float-article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+      }
+
+      /* Clear floats after the columns */
+      .float-content::after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+
+      /* Style the footer */
+      .float-footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+      @media (max-width: 600px) {
+        .float-nav,
+        .float-article {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      /* style layout flexbox */
+      .head-flex {
+        background-color: #666;
+        padding: 30px;
+        color: white;
+        text-align: center;
+        font-size: 35px;
+      }
+      .layflex {
+        display: -webkit-flex;
+        display: flex;
+      }
+      .nav {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        background: #ccc;
+        padding: 20px;
+      }
+      .flex-article {
+        -webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;
+        background: #f1f1f1;
+        padding: 10px;
+      }
+      .flex-footer {
+        background: #777;
+        color: #ccc;
+        text-align: center;
+        padding: 20px;
+      }
+
+      @media (max-width: 600px) {
+        .layflex {
+          -webkit-flex-direction: column;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="float-html">
+      <h2>CSS Layout Float</h2>
+      <p>
+        Dalam contoh ini, kami telah membuat header, dua kolom/kotak, dan
+        footer. Pada layar yang lebih kecil, kolom akan bertumpuk satu sama
+        lain. Ubah ukuran jendela browser untuk melihat efek responsif (Anda
+        akan mempelajari lebih lanjut tentang ini di bab berikutnya - Responsif
+        HTML.)
+      </p>
+
+      <header class="float-header">
+        <h2>Cities</h2>
+      </header>
+
+      <section class="float-content">
+        <nav class="float-nav">
+          <ul class="float-ul">
+            <li><a href="#">Jakarta</a></li>
+            <li><a href="#">Bandung</a></li>
+            <li><a href="#">Bekasi</a></li>
+          </ul>
+        </nav>
+
+        <article class="float-article">
+          <h1>Jakarta</h1>
+          <p>
+            Jakarta Adalah Ibu Kota Dari Indonesia, Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aliquid vel necessitatibus cum magnam
+            accusantium modi sed ducimus perferendis nesciunt laborum quibusdam,
+            id doloremque dicta labore?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            neque voluptate soluta at possimus, commodi dolores ullam voluptates
+            labore incidunt beatae eveniet iste voluptatum consectetur!
+          </p>
+        </article>
+      </section>
+      <footer class="float-footer">
+        <p>Crated By <a href="">Agung</a></p>
+      </footer>
+    </section>
+    <br />
+
+    <hr />
+
+    <!-- layouts flexbox -->
+    <section class="flexbox">
+      <h2 class="h2">CSS Layouts Flexbox</h2>
+      <p>
+        Dalam contoh ini, kami telah membuat header, dua kolom/kotak, dan
+        footer. Pada layar yang lebih kecil, kolom akan bertumpuk satu sama
+        lain. Ubah ukuran jendela browser untuk melihat efek responsif.
+      </p>
+
+      <header class="head-flex">
+        <h2>Cities</h2>
+      </header>
+
+      <section class="layflex">
+        <nav class="nav">
+          <ul class="nav-ul">
+            <li class="nav-li"><a href="#">Jakarta</a></li>
+            <li class="nav-li"><a href="#">Bandung</a></li>
+            <li class="nav-li"><a href="#">Tangerang</a></li>
+          </ul>
+        </nav>
+
+        <article class="flex-article">
+          <h4 class="h4">Jakarta</h4>
+          <p>
+            Jakarta Adalah Ibu Kota Dari Indonesia, Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Aliquid vel necessitatibus cum magnam
+            accusantium modi sed ducimus perferendis nesciunt laborum quibusdam,
+            id doloremque dicta labore?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            neque voluptate soluta at possimus, commodi dolores ullam voluptates
+            labore incidunt beatae eveniet iste voluptatum consectetur!
+          </p>
+        </article>
+      </section>
+
+      <footer class="flex-footer">
+        <p>Create by Me</p>
+      </footer>
+    </section>
+  </body>
+</html>
