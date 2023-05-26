@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table {
+        border-spacing: 15px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        /* border-collapse: collapse; */
+        border-radius: 10px;
+      }
+      th,
+      td {
+        background-color: aqua;
+        border-style: dotted;
+        padding: 15px;
+      }
+    </style>
+    <title>Table | HTML</title>
+  </head>
+  <body>
+    <h1>Table Pada HTML</h1>
+    <p>
+      Tabel HTML memungkinkan pengembang web untuk mengatur data menjadi baris
+      dan kolom.
+    </p>
+
+    <!-- <tr> singkatan dari table row -->
+    <!-- <th> singkatan dari table head -->
+    <!-- <td> singkatan dari table data -->
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th colspan="2">Colspan</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Agung</td>
+        <td>Bali</td>
+        <td>Bali</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Harist</td>
+        <td rowspan="2">Rowspan</td>
+        <td>Tegal</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Lasbi</td>
+        <td>Banten</td>
+      </tr>
+    </table>
+
+    <!-- table borders -->
+  </body>
+</html>
