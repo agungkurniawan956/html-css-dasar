@@ -1,0 +1,17 @@
+body {
+  background-image: url(../img/Cartoon-wallpaper-9739638.jpg);
+  background-repeat: repeat-x;
+  background-position: right top;
+  background-attachment: fixed;
+}
+/* background color */
+h1 {
+  background-color: blue;
+  opacity: 0.7;
+}
+
+/* shorthand */
+
+.bckimg {
+  background: #fff url(../img/pic_bulbon.gif) no-repeat fixed top;
+}

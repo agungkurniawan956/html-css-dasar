@@ -1,0 +1,27 @@
+/* * bintang mengaruhi semua elemen pada html */
+* {
+  font-family: arial;
+  margin: 21px;
+}
+
+/* seletor dapat menggunakan element html, class, id */
+h1 {
+  font-size: 48px;
+  color: burlywood;
+}
+.para1 {
+  color: red;
+  line-height: 25px;
+}
+
+#para2 {
+  color: blue;
+  line-height: 31px;
+}
+
+/* selector juga dapat di kelompokan menggunakan koma  */
+.para3,
+.para4 {
+  color: aqua;
+  text-align: center;
+}
