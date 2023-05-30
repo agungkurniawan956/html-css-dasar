@@ -19,7 +19,7 @@
   </head>
   <body>
     <h1>HTML Form</h1>
-    <form action="">
+    <form action="" target="_blank" method="get" autocomplete="on">
       <fieldset>
         <legend>Data Diri</legend>
         <label for="firstName">First Name</label><br />
@@ -38,15 +38,12 @@
         <label for="female">Female</label>
 
         <p>Hobby</p>
-        <p>
-          <input type="checkbox" name="bola" id="bola" /><label for="bola"
-            >Bola</label
-          >
-        </p>
-        <p>
-          <input type="checkbox" name="voly" id="voly" />
-          <label for="voly">Voly</label>
-        </p>
+        <input type="checkbox" name="bola" id="bola" value="bola" />
+        <label for="bola">Bola</label>
+        <input type="checkbox" name="voly" id="voly" value="voly" />
+        <label for="voly">Voly</label>
+        <input type="checkbox" name="game" id="game" value="game" />
+        <label for="voly">Game</label>
         <p>
           <label for="gelar">Lulusan:</label>
           <select name="gelar" id="gelar">
