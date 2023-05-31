@@ -1,0 +1,37 @@
+* {
+  font-family: arial;
+  background-color: rgb(56, 56, 56);
+  color: white;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+h3 {
+  padding: 11px;
+  width: max-content;
+  /* margin-bottom: 1rem; */
+  background-color: aqua;
+  border-left-style: solid;
+  border-color: blue;
+  border-width: 5px;
+}
+nav {
+  height: 15px;
+  background-color: black;
+}
+
+nav a {
+  color: rgb(255, 254, 254);
+  padding: 5px 9px;
+  text-decoration: none;
+  margin: auto;
+}
+nav a:hover {
+  /* color: rgb(105, 105, 248); */
+  background-color: black;
+}
