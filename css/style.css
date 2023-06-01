@@ -13,25 +13,42 @@ h1 {
 }
 h3 {
   padding: 11px;
-  width: max-content;
+  max-width: 25rem;
   /* margin-bottom: 1rem; */
   background-color: aqua;
   border-left-style: solid;
   border-color: blue;
   border-width: 5px;
+  color: black;
+  margin: 1rem 3rem;
 }
 nav {
-  height: 15px;
-  background-color: black;
+  margin: 0 3rem;
 }
 
 nav a {
   color: rgb(255, 254, 254);
-  padding: 5px 9px;
   text-decoration: none;
-  margin: auto;
+  padding: 5px;
+  text-align: justify;
 }
 nav a:hover {
   /* color: rgb(105, 105, 248); */
   background-color: black;
+}
+
+/* contoh box Model*/
+.formating-html {
+  margin: 1rem 3rem;
+  border: 2px solid black;
+  padding: 5px;
+}
+.formating-html h4 ins {
+  width: 200px;
+  background-color: pink;
+  color: black;
+  padding: 10px;
+  border-left-style: solid;
+  border-color: red;
+  border-width: 6px;
 }
