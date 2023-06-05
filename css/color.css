@@ -1,11 +1,10 @@
 /* menentukan warna dapat menggunakan nilai rgb, hex, hsl, grba, hsla */
 h1 {
   background-color: rgba(17, 17, 17, 0.8);
-  color: #00ffff; /*hex*/
-  border: 2px solid red;
+  color: #fff;
 }
 
 p {
-  background-color: hsl(60, 6%, 10%);
-  color: #00ffff;
+  background-color: hsl(49, 93%, 56%);
+  color: blue;
 }

@@ -5,25 +5,46 @@
 html {
   scroll-behavior: smooth;
 }
+.satu {
+  width: 199px;
+  height: 199px;
+  text-align: center;
+  background-color: black;
+}
+.dua {
+  width: 99px;
+  height: 99px;
+  background-color: blue;
+}
+.tiga {
+  background-color: brown;
+}
 
 header {
   background-color: black;
+  border: 2px solid red;
+  height: 2rem;
   color: white;
 }
 
 header .sosmed a {
-  display: inline;
+  background-color: blue;
   color: white;
+  text-align: center;
+  padding-left: 9px;
+}
+
+header .sosmed a i {
+  padding-top: 5px;
 }
 
 h1 {
-  margin-top: 1rem;
   text-align: center;
   color: black;
 }
 h3 {
   padding: 11px;
-  max-width: 25rem;
+  max-width: 16rem;
   /* margin-bottom: 1rem; */
   background-color: aqua;
   border-left-style: solid;
@@ -31,6 +52,8 @@ h3 {
   border-width: 5px;
   color: black;
   margin: 1rem 3rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 nav {
   /* margin-top: -84px; */

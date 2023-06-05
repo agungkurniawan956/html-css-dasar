@@ -7,10 +7,40 @@ h1 {
   border-radius: 5px;
 }
 
-p {
-  border-style: dashed dotted solid double;
+p.dashed {
+  border-style: dashed;
 }
-.shorthand {
+p.dotted {
+  border-style: dotted;
+}
+p.double {
+  border-style: double;
+}
+p.groove {
+  border-style: groove;
+}
+p.hidden {
+  border-style: hidden;
+}
+p.none {
+  border-style: none;
+}
+p.sides {
+  border-style: dotted solid;
+}
+p.bottom {
+  border-bottom-style: solid;
+  border-color: red;
+}
+p.color {
+  border-style: dotted;
+  border-color: blue;
+}
+p.shorthand {
   border: 3px solid blue;
-  border-radius: 5px; /*border Rounded*/
+  /* border-radius: 5px; border Rounded */
+}
+p.rounded {
+  border: 2px solid blue;
+  border-radius: 9px;
 }
