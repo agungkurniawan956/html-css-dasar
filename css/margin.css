@@ -1,0 +1,67 @@
+h1 {
+  border: 2px solid black;
+  background-color: aqua;
+  height: 59px;
+  width: 299px;
+}
+.normal {
+  background-color: aqua;
+  border: 2px solid salmon;
+  text-align: center;
+  width: 199px;
+  height: 199px;
+  margin-top: 19px;
+  margin-left: 199px;
+  margin-right: 99px;
+  margin-bottom: 9px;
+}
+
+.shorthand {
+  background-color: aqua;
+  border: 2px solid black;
+  width: 199px;
+  height: 199px;
+  margin: 9px 49px 9px 49px;
+}
+
+.threevalue {
+  background-color: aqua;
+  border: 2px solid black;
+  width: 199px;
+  height: 199px;
+  margin: -59px 99px 19px; /*top, right and left, bottom*/
+}
+
+.auto {
+  background-color: aqua;
+  border: 2px solid black;
+  width: 199px;
+  height: 199px;
+  margin: auto; /*top, right and left, bottom*/
+}
+
+.percent {
+  background-color: aqua;
+  border: 2px solid black;
+  width: 50%;
+  height: 199px;
+  margin-top: 1%;
+  margin-left: 25%;
+}
+
+.induk {
+  background-color: aqua;
+  border: 2px solid black;
+  width: 50%;
+  height: 199px;
+  margin-top: 1%;
+  margin-left: 25%;
+}
+
+.induk .anak {
+  background-color: aliceblue;
+  border: 2px solid black;
+  width: 99px;
+  height: 99px;
+  margin: 19px auto;
+}
