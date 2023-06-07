@@ -1,0 +1,66 @@
+h1 {
+  border: 2px solid black;
+  background-color: aqua;
+  padding: 5px;
+}
+
+.normal {
+  border: 2px solid black;
+  background-color: aqua;
+  padding-top: 1rem;
+  padding-right: 12px;
+  padding-bottom: 12px;
+  padding-left: 1rem;
+  margin-bottom: 5px;
+}
+
+.shorthand {
+  border: 2px solid black;
+  background-color: aqua;
+  padding: 1rem 2rem 1rem 2rem;
+  margin-bottom: 5px;
+}
+
+.threevalue {
+  border: 2px solid black;
+  background-color: aqua;
+  padding: 1rem 2rem 3rem; /*Top, Right and Left, Bottom*/
+  margin-bottom: 5px;
+}
+.twovalue {
+  border: 2px solid black;
+  background-color: aqua;
+  padding: 1rem 2rem; /*Top & bottom, Right & Left*/
+  margin-bottom: 5px;
+}
+
+.onevalue {
+  border: 2px solid black;
+  background-color: aqua;
+  width: 200px;
+  padding: 1rem; /*all*/
+  margin-bottom: 5px;
+}
+
+.box-sizing {
+  border: 2px solid black;
+  background-color: aqua;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  margin-bottom: 9px;
+}
+
+.without-box-sizing {
+  border: 2px solid black;
+  background-color: aqua;
+  width: 300px;
+  padding: 1rem 2rem;
+}
+
+/* tidak di sarankan */
+.percent {
+  border: 2px solid black;
+  background-color: aqua;
+  padding: 10%;
+}
