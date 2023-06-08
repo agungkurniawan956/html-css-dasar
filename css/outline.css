@@ -1,0 +1,25 @@
+h1 {
+  background-color: aqua;
+  /* border: 1px solid black; */
+  outline-color: red;
+  outline-width: 2px;
+}
+
+.normal {
+  background-color: aqua;
+  margin: 55px auto;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  outline: 5px solid rgba(255, 0, 0, 0.5);
+}
+
+.offset {
+  background-color: aqua;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  outline: 5px solid rgba(255, 0, 0, 0.5);
+  outline-offset: 15px;
+}
