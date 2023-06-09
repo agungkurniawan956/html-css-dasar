@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+}
+h1 {
+  color: blue;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: overline;
+  text-decoration-color: brown;
+  text-decoration-style: double;
+  text-decoration-thickness: 9px;
+  text-shadow: 0 0 3px #ff0000;
+}
+
+.justify {
+  color: green;
+  margin-bottom: 9px;
+  text-align: justify;
+  text-transform: uppercase;
+  text-indent: 50px;
+  letter-spacing: 5px;
+  line-height: 1.8;
+}
+
+.right {
+  text-align: right;
+  text-transform: capitalize;
+  line-height: 0.8;
+  word-spacing: 5px;
+  white-space: nowrap;
+}
+
+.rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.a {
+  vertical-align: baseline;
+}
+
+.b {
+  vertical-align: text-top;
+}
+
+.c {
+  vertical-align: text-bottom;
+}
+
+.d {
+  vertical-align: sub;
+}
+.e {
+  vertical-align: super;
+}
+.decoration {
+  margin-top: 5px;
+  margin-bottom: 19px;
+  text-decoration: underline red double 5px;
+  text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+a {
+  text-decoration: none;
+}
