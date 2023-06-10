@@ -1,0 +1,28 @@
+body {
+  font-size: 100%;
+  font-family: Poppins, sans-serif;
+}
+h1 {
+  font-family: 'Abril Fatface', serif;
+  font-size: 5vw; /*Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.*/
+}
+h2 {
+  font: italic small-caps bold 12px 'Abril Fatface', serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.font-oblique {
+  font-style: oblique;
+}
+
+.small-caps {
+  font-variant: small-caps;
+}
