@@ -1,0 +1,15 @@
+/* membuat button dengan link */
+a.btn:link,
+a.btn:visited {
+  color: #000000;
+  display: inline-block;
+  padding: 9px 25px;
+  text-decoration: none;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+a.btn:hover {
+  color: black;
+  background-color: blue;
+}
