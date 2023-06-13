@@ -1,0 +1,22 @@
+table {
+  border-spacing: 15px;
+  width: 1000px;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  /* border-collapse: collapse; */
+  border-radius: 10px;
+}
+th,
+td {
+  background-color: aqua;
+  border-style: dotted;
+  padding: 15px;
+  vertical-align: bottom;
+  height: 50px;
+}
+td:hover {
+  background-color: blue;
+}
