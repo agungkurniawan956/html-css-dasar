@@ -1,0 +1,24 @@
+.black {
+  border: 2px solid black;
+  height: 199px;
+  left: 9px;
+  position: relative;
+  z-index: 0;
+}
+
+.green {
+  border: 5px solid green;
+  height: 50px;
+  width: 390px;
+  position: absolute;
+  top: 150px;
+  z-index: 3;
+}
+.blue {
+  background-color: blue;
+  height: 50px;
+  width: 390px;
+  position: absolute;
+  top: 120px;
+  z-index: 2;
+}
