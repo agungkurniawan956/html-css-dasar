@@ -5,7 +5,8 @@ h1 {
   margin-bottom: 29px;
 }
 .right {
-  margin-bottom: 86px;
+  border: 2px solid red;
+  overflow: auto;
 }
 .right img {
   float: right;
@@ -15,6 +16,8 @@ h1 {
 
 .left {
   margin-bottom: 99px;
+  border: 2px solid red;
+  clear: right;
 }
 .left img {
   float: left;
@@ -37,4 +40,21 @@ h1 {
 .kotak3 {
   float: left;
   background-color: green;
+}
+
+.without {
+  border: 2px solid red;
+}
+
+.without img {
+  float: right;
+}
+
+.clearfix {
+  border: 2px solid red;
+  overflow: auto;
+}
+
+.clearfix img {
+  float: right;
 }
