@@ -1,5 +1,6 @@
 * {
-  margin: 0 25px;
+  margin: 0;
+  box-sizing: border-box;
 }
 h1 {
   margin-bottom: 29px;
@@ -50,11 +51,55 @@ h1 {
   float: right;
 }
 
-.clearfix {
-  border: 2px solid red;
-  overflow: auto;
+.case {
+  margin: 25px 25px;
 }
 
 .clearfix img {
   float: right;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  background-color: #bbb;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.img-container {
+  width: 30%;
+  float: left;
+  padding: 15px;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  border: 2px solid red;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  float: left;
+}
+li a {
+  color: wheat;
+  display: inline-block;
+  text-decoration: none;
+  padding: 25px 15px;
+}
+li a:hover {
+  background-color: black;
+  font-weight: 700;
 }
