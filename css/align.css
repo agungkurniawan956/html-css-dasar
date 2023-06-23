@@ -46,3 +46,14 @@ h1 {
   height: 200px;
   border: 2px solid red;
 }
+
+.line-height {
+  border: 2px solid red;
+  line-height: 199px;
+  height: 199px;
+  text-align: center;
+}
+
+.line-height p {
+  line-height: 1.5;
+}

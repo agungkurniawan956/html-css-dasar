@@ -1,0 +1,39 @@
+a:link {
+  color: green;
+}
+a:visited {
+  color: rgb(180, 88, 180);
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: blue;
+}
+
+.star:hover {
+  color: rgb(43, 255, 0);
+}
+div.btn {
+  background-color: red;
+  height: 59px;
+  text-align: center;
+  line-height: 25px;
+}
+div.btn:hover {
+  background-color: blue;
+}
+
+.show p {
+  background-color: rgb(199, 199, 199);
+  width: 49px;
+  padding: 15px;
+}
+.show p {
+  display: none;
+  background-color: blue;
+}
+
+.show:hover p {
+  display: block;
+}
