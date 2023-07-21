@@ -32,8 +32,13 @@ div.btn:hover {
 .show p {
   display: none;
   background-color: blue;
+  color: white;
 }
 
 .show:hover p {
   display: block;
+}
+
+.first-child p:first-child {
+  color: rgb(80, 80, 80);
 }
