@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .container {
+        /* width: 100%; */
+        /* margin: 0; */
+        padding: 5px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        display: flex;
+        margin-bottom: 20px;
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        /* align-items: baseline; */
+      }
+
+      /* flex direction */
+      .container.row {
+        flex-direction: row; /*default*/
+      }
+      .container.row-reverse {
+        flex-direction: row-reverse;
+      }
+
+      .container.column {
+        flex-direction: column;
+      }
+
+      .container.column-reverse {
+        flex-direction: column-reverse;
+      }
+
+      /* flex warp */
+      .container.no-warp {
+        flex-wrap: nowrap; /*default*/
+      }
+
+      .container.warp {
+        flex-wrap: wrap;
+      }
+
+      .container.warp-reverse {
+        flex-wrap: wrap-reverse;
+      }
+
+      /* justify-content */
+      .container.flex-start {
+        justify-content: flex-start; /*default*/
+      }
+
+      .container.flex-end {
+        justify-content: flex-end;
+      }
+
+      .container.center {
+        justify-content: center;
+      }
+
+      .container.space-between {
+        justify-content: space-between;
+      }
+
+      .container.space-around {
+        justify-content: space-around;
+      }
+
+      .container.space-evenly {
+        justify-content: space-evenly;
+      }
+
+      /* align-items */
+      .container.align-flex-start {
+        height: 200px;
+        align-items: flex-start;
+      }
+
+      .container.align-flex-end {
+        height: 200px;
+        align-items: flex-end;
+      }
+
+      .container.align-center {
+        height: 200px;
+        align-items: center;
+      }
+
+      .container.stretch {
+        height: 200px;
+        align-items: stretch;
+      }
+
+      .container.baseline {
+        height: 200px;
+        align-items: baseline;
+      }
+      .container.baseline .kotak1 {
+        line-height: normal;
+      }
+      .container.baseline .kotak2 {
+        line-height: 50px;
+        padding-top: 50px;
+      }
+      .container.baseline .kotak3 {
+        line-height: 50px;
+        padding-bottom: 50px;
+      }
+
+      /* align-content */
+
+      .container div {
+        width: 80px;
+        /* height: 80px; */
+        text-align: center;
+        line-height: 80px;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 2px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Box CSS</h1>
+
+    <h2>Flex Direction</h2>
+
+    <h4>Row (Default)</h4>
+    <div class="container row">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+    </div>
+
+    <h4>Row Reverse</h4>
+    <div class="container row-reverse">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+    </div>
+
+    <h4>Column</h4>
+    <div class="container column">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+    </div>
+
+    <h4>Column Reverse</h4>
+    <div class="container column-reverse">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+    </div>
+
+    <h2>Flex Warp</h2>
+
+    <h4>No Warp (Default)</h4>
+    <div class="container no-warp">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+      <div class="kotak5">5</div>
+      <div class="kotak6">6</div>
+    </div>
+
+    <h4>Warp</h4>
+    <div class="container warp">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+      <div class="kotak5">5</div>
+      <div class="kotak6">6</div>
+    </div>
+
+    <h4>Warp Reverse</h4>
+    <div class="container warp-reverse">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+      <div class="kotak4">4</div>
+      <div class="kotak5">5</div>
+      <div class="kotak6">6</div>
+    </div>
+
+    <h2>Justify Content</h2>
+
+    <h4>Flex Start</h4>
+    <div class="container flex-start">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Flex End</h4>
+    <div class="container flex-end">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Center</h4>
+    <div class="container center">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Space Between</h4>
+    <div class="container space-between">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Space Around</h4>
+    <div class="container space-around">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Space Evenly</h4>
+    <div class="container space-evenly">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h2>Align Items</h2>
+
+    <h4>Flex Start</h4>
+    <div class="container align-flex-start">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Flex End</h4>
+    <div class="container align-flex-end">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Center</h4>
+    <div class="container align-center">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Stretch</h4>
+    <div class="container stretch">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+
+    <h4>Baseline</h4>
+    <div class="container baseline">
+      <div class="kotak1">1</div>
+      <div class="kotak2">2</div>
+      <div class="kotak3">3</div>
+    </div>
+  </body>
+</html>
